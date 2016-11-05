@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="F:\Android\Android Studio\gradle\gradle-2.10" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appintrolibrary" />
+            <option value="$PROJECT_DIR$/countdown" />
+            <option value="$PROJECT_DIR$/expandpoptabview" />
+            <option value="$PROJECT_DIR$/flowlayoutlibrary" />
+            <option value="$PROJECT_DIR$/grantandroidpermission" />
+            <option value="$PROJECT_DIR$/labeleffect" />
+            <option value="$PROJECT_DIR$/logger" />
+            <option value="$PROJECT_DIR$/niftydialogeffectslibrary" />
+            <option value="$PROJECT_DIR$/pinnedheaderlistview" />
+            <option value="$PROJECT_DIR$/supertextview" />
+            <option value="$PROJECT_DIR$/togglebutton" />
+            <option value="$PROJECT_DIR$/xedittext" />
+            <option value="$PROJECT_DIR$/xradiobutton" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appintrolibrary" />
+            <option value="$PROJECT_DIR$/countdown" />
+            <option value="$PROJECT_DIR$/expandpoptabview" />
+            <option value="$PROJECT_DIR$/flowlayoutlibrary" />
+            <option value="$PROJECT_DIR$/grantandroidpermission" />
+            <option value="$PROJECT_DIR$/labeleffect" />
+            <option value="$PROJECT_DIR$/logger" />
+            <option value="$PROJECT_DIR$/niftydialogeffectslibrary" />
+            <option value="$PROJECT_DIR$/pinnedheaderlistview" />
+            <option value="$PROJECT_DIR$/supertextview" />
+            <option value="$PROJECT_DIR$/togglebutton" />
+            <option value="$PROJECT_DIR$/xedittext" />
+            <option value="$PROJECT_DIR$/xradiobutton" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

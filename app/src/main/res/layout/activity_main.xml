@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.runtai.testproject.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.runtai.testproject.view.RunningTextView
+                android:id="@+id/runningtextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="00.00"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击执行数字动画"
+                android:textSize="18sp" />
+
+            <com.runtai.testproject.view.AutoScrollTextView
+                android:id="@+id/notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#EEE"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登录、注册界面" />
+
+            <Button
+                android:id="@+id/contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="选取联系人界面" />
+
+            <Button
+                android:id="@+id/supertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="展示功能强大的SuperTextView界面" />
+
+            <Button
+                android:id="@+id/countdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="广告倒计时View界面" />
+
+            <Button
+                android:id="@+id/checkfourmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="展示验证、生成验证码界面" />
+
+            <Button
+                android:id="@+id/datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="日期、时间选择器界面" />
+
+            <Button
+                android:id="@+id/list_open_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="列表展开、关闭界面" />
+
+            <Button
+                android:id="@+id/flowlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="热门标签流式布局界面界面" />
+
+            <Button
+                android:id="@+id/dialog_anim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="多种Dialog动画效果界面" />
+
+            <Button
+                android:id="@+id/list_item_anim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView item飞入动画效果" />
+
+            <Button
+                android:id="@+id/list_grid_anim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView GridView相互切换动画效果" />
+
+            <Button
+                android:id="@+id/list_connect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="几个ListView一起联动" />
+
+            <Button
+                android:id="@+id/scroll_isshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView滑动时显示、隐藏标题" />
+
+            <Button
+                android:id="@+id/animationbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="一个平滑酷炫的按钮动画" />
+
+            <Button
+                android:id="@+id/xEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="多功能EditText控件(携带清除按钮)" />
+
+            <Button
+                android:id="@+id/XRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义单选项(可用于支付)" />
+
+            <Button
+                android:id="@+id/two_list_linkage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="两个ListView左右联动" />
+
+            <Button
+                android:id="@+id/label_effect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="贴纸效果" />
+
+            <Button
+                android:id="@+id/expandPopTabView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="分类筛选" />
+
+            <Button
+                android:id="@+id/toggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="状态开关按钮" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

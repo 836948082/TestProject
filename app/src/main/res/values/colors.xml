@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="grey_b2b2b2">#B2B2B2</color>
+    <color name="blue_78d2f6">#78D2F6</color>
+    <color name="blue_01aaee">#01AAEE</color>
+    <color name="blue_00aaee">#00AAEE</color>
+    <color name="red_f3323b">#F3323B</color>
+
+    <color name="grey_f6f6f6">#f6f6f6</color>
+    <color name="grey_a5a5a5">#A5A5A5</color>
+    <color name="grey_dde1e7">#DDE1E7</color>
+    <color name="red_f4333c">#F4333C</color>
+
+    <color name="teal">#00796B</color>
+    <color name="brown">#8D6E63</color>
+    <color name="blue">#2196F3</color>
+    <color name="grey">#607D8B</color>
+    <color name="orange">#F57C00</color>
+
+    <color name="light_blue">#6593cb</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 绿色 -->
+    <color name="green">#6ABD43</color>
+    <!-- 灰色 -->
+    <color name="gray">#F0F1EF</color>
+    <color name="gray_text">#A5A5A5</color>
+    <!-- 字体灰色 -->
+    <color name="gray_lite_more">#CACACA</color>
+    <color name="gray_more">#6A6A6A</color>
+    <color name="gray_background">#F0F0F0</color>
+    <color name="default_back">#f5f5f5</color>
+    <!-- 蓝色 -->
+    <color name="blue_textview">#0f9eff</color>
+    <color name="blue_text">#006dff</color>
+    <color name="blue_qian">#1d80f3</color>
+
+    <color name="qian_grey">#F5F5F5</color>
+    <color name="deepblue">#313E4E</color>
+    <color name="light_gray">#c2c7cc</color>
+    <color name="button_color">#81cfeb</color>
+    <!-- 红色 -->
+    <color name="red">#FF0000</color>
+    <color name="red_car">#FF0000</color>
+    <color name="red_text">#E24A49</color>
+    <color name="red_back">#FF1A1A</color>
+
+    <color name="red_text_2">#FF2D48</color>
+
+    <color name="orange_text">#F78921</color>
+    <!-- 按钮颜色 -->
+    <color name="dark_gray">#3d454c</color>
+    <!-- 标题栏背景色 -->
+    <color name="dark_gray_pressed">#373e44</color>
+    <!-- 按钮点击时背景颜色 -->
+    <color name="darker_gray">#1f2226</color>
+    <!-- 抽屉菜单底色 -->
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+
+    <color name="jishi">#555555</color>
+
+    <color name="hint_text">#7f7f7f</color>
+    <color name="text">#AAAAAA</color>
+
+    <color name="status_color">#48ce5c</color>
+    <color name="material_pink_500">#000000</color>
+
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="blue_pager">#0080FF</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <color name="colorFirstItemBackground">#eaeaea</color>
+    <color name="colorSecondItemBackground">#ffffff</color>
+    <color name="colorThirdItemBackground">#ffffff</color>
+    <color name="colorItemTextBlack">#303030</color>
+    <color name="colorItemTextRed">#e95454</color>
+
+    <color name="gray_background_right">#FAFAFA</color>
+    <color name="gray_light">#EBEDF0</color>
+</resources>

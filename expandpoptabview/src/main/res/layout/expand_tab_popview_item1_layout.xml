@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/expand_tab_item_height"
+    android:layout_marginLeft="20dp"
+    android:background="@drawable/expand_tab_popview_item_selector"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/expand_tab_popview_padingtop"
+    android:paddingTop="@dimen/expand_tab_popview_padingtop"
+    android:textColor="@android:color/background_dark"
+    android:textSize="17sp" />

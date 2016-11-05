@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.runtai.supertextview.SuperTextView
+        android:id="@+id/stv_1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        stv:sLeftBottomTextColor2="@color/colorAccent"
+        stv:sLeftBottomTextString="招商银行(8888)"
+        stv:sLeftBottomTextString2="限额说明>>"
+        stv:sLeftIconRes="@drawable/bank_zhao_shang"
+        stv:sLeftTopTextString="银行卡支付"
+        stv:sRightCheckBoxRes="@drawable/circular_check_bg"
+        stv:sRightCheckBoxShow="true"
+        stv:sUseRipple="true" />
+
+    <com.runtai.supertextview.SuperTextView
+        android:id="@+id/stv_2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        stv:sLeftBottomTextColor2="@color/colorAccent"
+        stv:sLeftBottomTextString="可用余额"
+        stv:sLeftBottomTextString2="8888元"
+        stv:sLeftIconRes="@drawable/balance_icon"
+        stv:sLeftTopTextString="余额支付"
+        stv:sLineShow="both"
+        stv:sRightCheckBoxRes="@drawable/circular_check_bg"
+        stv:sRightCheckBoxShow="true" />
+
+    <com.runtai.supertextview.SuperTextView
+        android:id="@+id/stv_3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        stv:sLeftBottomTextColor2="@color/colorAccent"
+        stv:sLeftBottomTextString="尾号(1699)"
+        stv:sLeftBottomTextString2="限额说明>>"
+        stv:sLeftIconRes="@drawable/not_bank_card_icon"
+        stv:sLeftTopTextString="银行卡支付" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取选中项的下标" />
+
+    <TextView
+        android:id="@+id/tv_1_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="下标" />
+
+</LinearLayout>

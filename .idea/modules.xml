@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appintrolibrary/appintrolibrary.iml" filepath="$PROJECT_DIR$/appintrolibrary/appintrolibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/countdown/countdown.iml" filepath="$PROJECT_DIR$/countdown/countdown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/expandpoptabview/expandpoptabview.iml" filepath="$PROJECT_DIR$/expandpoptabview/expandpoptabview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowlayoutlibrary/flowlayoutlibrary.iml" filepath="$PROJECT_DIR$/flowlayoutlibrary/flowlayoutlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grantandroidpermission/grantandroidpermission.iml" filepath="$PROJECT_DIR$/grantandroidpermission/grantandroidpermission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labeleffect/labeleffect.iml" filepath="$PROJECT_DIR$/labeleffect/labeleffect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logger/logger.iml" filepath="$PROJECT_DIR$/logger/logger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/niftydialogeffectslibrary/niftydialogeffectslibrary.iml" filepath="$PROJECT_DIR$/niftydialogeffectslibrary/niftydialogeffectslibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinnedheaderlistview/pinnedheaderlistview.iml" filepath="$PROJECT_DIR$/pinnedheaderlistview/pinnedheaderlistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supertextview/supertextview.iml" filepath="$PROJECT_DIR$/supertextview/supertextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/togglebutton/togglebutton.iml" filepath="$PROJECT_DIR$/togglebutton/togglebutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xedittext/xedittext.iml" filepath="$PROJECT_DIR$/xedittext/xedittext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xradiobutton/xradiobutton.iml" filepath="$PROJECT_DIR$/xradiobutton/xradiobutton.iml" />
+    </modules>
+  </component>
+</project>

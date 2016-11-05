@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.runtai.testproject">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegActivity" />
+
+        <activity android:name=".ContactsActivity" />
+
+        <activity android:name=".activity.supertextview.SuperTextViewActivity" />
+        <activity android:name=".activity.supertextview.Super_Activity_1" />
+        <activity android:name=".activity.supertextview.Super_Activity_2" />
+        <activity android:name=".activity.supertextview.Super_Activity_3" />
+        <activity android:name=".activity.supertextview.Super_Activity_4" />
+        <activity android:name=".activity.supertextview.Super_Activity_5" />
+        <activity android:name=".activity.supertextview.Super_Activity_6" />
+        <activity android:name=".activity.supertextview.Super_Activity_7" />
+
+        <activity android:name=".activity.CountdownActivity" />
+
+        <activity android:name=".activity.checkfourmark.CheckFourMark" />
+
+        <activity android:name=".activity.DatePickerActivity" />
+
+        <activity android:name=".activity.expandablelistview.ExpandableListViewActivity" />
+
+        <activity android:name=".activity.FlowLayoutActivity" />
+
+        <activity android:name=".activity.NiftyDialogEffectsActivity" />
+
+        <activity android:name=".activity.listview_item_effect.ListView_itemActivity" />
+
+        <activity android:name=".activity.listview_gridview_change.BetweenListViewGridViewActivity" />
+
+        <activity android:name=".activity.connectlistview.ConnectListViewActivity" />
+
+        <activity android:name=".activity.ScrollShowTitleActivity" />
+
+        <activity android:name=".activity.animationbutton.AnimationButtonActivity" />
+
+        <activity android:name=".activity.xedittext.XEditTextActivity" />
+
+        <activity android:name=".activity.xradiobutton.XRadioButtonActivity" />
+
+        <activity android:name=".activity.pinnedheaderlistview.PinnedHeaderListViewActivity" />
+
+        <activity android:name=".activity.labeleffect.LabelEffectActivity" />
+        <activity android:name=".activity.labeleffect.ListViewActivity" />
+        <activity android:name=".activity.labeleffect.RecyclerViewActivity" />
+
+        <activity android:name=".activity.expandpoptabview.ExpandPopTabViewActivity" />
+
+        <activity android:name=".activity.ToggleButtonActivity" />
+    </application>
+
+</manifest>

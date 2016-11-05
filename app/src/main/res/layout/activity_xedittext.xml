@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp">
+
+        <TextView
+            android:id="@+id/text_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.runtai.xedittext.XEditText
+            android:id="@+id/default_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="默认情况下，文本完全相同" />
+
+        <com.runtai.xedittext.XEditText
+            android:id="@+id/clear_marker_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="单击右图标以清除内容" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#1976d2" />
+
+        <com.runtai.xedittext.XEditText
+            android:id="@+id/custom_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="定制分隔模式"
+            android:inputType="phone"
+            app:x_separator="-" />
+        <!-- 如果想要自动分割效果，不需要设置maxLength属性(在代码中设置) -->
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#1976d2" />
+
+        <Button
+            android:id="@+id/show_pattern_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分隔:18037690267" />
+
+        <com.runtai.xedittext.XEditText
+            android:id="@+id/show_separator_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="正常字符串分隔模式" />
+
+        <com.runtai.xedittext.XEditText
+            android:id="@+id/custom_marker_edit_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/icon_tips"
+            android:gravity="center_vertical"
+            android:hint="提示标记在输入后显示" />
+
+        <com.runtai.xedittext.XEditText
+            android:id="@+id/custom_marker_edit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_tips"
+            android:gravity="center_vertical"
+            android:hint="提示标记在输入前显示"
+            app:x_customizeMarkerEnable="true"
+            app:x_showMarkerTime="before_input" />
+
+        <com.runtai.xedittext.XEditText
+            android:id="@+id/custom_marker_edit_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_tips"
+            android:gravity="center_vertical"
+            android:hint="提示标记在获取焦点时显示"
+            app:x_customizeMarkerEnable="true"
+            app:x_showMarkerTime="always" />
+
+        <com.runtai.xedittext.XEditText
+            android:id="@+id/ios_style_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_xedittext_bg"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="5dp"
+            android:hint="search"
+            android:padding="5dp"
+            app:x_iOSStyleEnable="true" />
+
+        <com.runtai.xedittext.XEditText
+            android:id="@+id/enable_emoji_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="支持Emoji表情符号输入"
+            app:x_disableEmoji="false" />
+
+        <com.runtai.xedittext.XEditText
+            android:id="@+id/disable_emoji_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="禁止Emoji表情符号输入"
+            app:x_disableEmoji="true" />
+    </LinearLayout>
+</ScrollView>

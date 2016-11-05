@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kelina="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/first_image_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/countdown_backgroud"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/jumpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.runtai.countdown.RoundProgressBar
+            android:id="@+id/roundProgressBar"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            kelina:roundColor="#22000000"
+            kelina:roundProgressColor="#00ccff"
+            kelina:roundWidth="2dip"
+            kelina:textColor="#FFFFFF"
+            kelina:textSize="12dip" />
+    </LinearLayout>
+
+    <com.runtai.countdown.CountDownView
+        android:id="@+id/countDownView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/jumpId"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        kelina:background_color="#22000000"
+        kelina:border_color="#55B8E2"
+        kelina:border_width="2dp"
+        kelina:text_size="12dp" />
+
+</RelativeLayout>
