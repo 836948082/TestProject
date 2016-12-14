@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/pulltorefresh_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下拉刷新、上拉加载--ListView" />
+
+    <Button
+        android:id="@+id/pulltorefresh_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下拉刷新、上拉加载--GridView" />
+
+    <Button
+        android:id="@+id/pulltorefresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下拉刷新、上拉加载--ScrollView" />
+
+</LinearLayout>

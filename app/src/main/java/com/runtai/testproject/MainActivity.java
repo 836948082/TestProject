@@ -6,7 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
+import android.widget.Toast;
 
+import com.runtai.logger.Logger;
+import com.runtai.okhttputils.OkHttpUtils;
+import com.runtai.okhttputils.callback.StringCallback;
 import com.runtai.testproject.activity.CountdownActivity;
 import com.runtai.testproject.activity.DatePickerActivity;
 import com.runtai.testproject.activity.FlowLayoutActivity;
@@ -15,6 +19,7 @@ import com.runtai.testproject.activity.ScrollShowTitleActivity;
 import com.runtai.testproject.activity.ToggleButtonActivity;
 import com.runtai.testproject.activity.animationbutton.AnimationButtonActivity;
 import com.runtai.testproject.activity.checkfourmark.CheckFourMark;
+import com.runtai.testproject.activity.clickdeflect.ClickDeflectActivity;
 import com.runtai.testproject.activity.connectlistview.ConnectListViewActivity;
 import com.runtai.testproject.activity.expandablelistview.ExpandableListViewActivity;
 import com.runtai.testproject.activity.expandpoptabview.ExpandPopTabViewActivity;
@@ -22,11 +27,16 @@ import com.runtai.testproject.activity.labeleffect.LabelEffectActivity;
 import com.runtai.testproject.activity.listview_gridview_change.BetweenListViewGridViewActivity;
 import com.runtai.testproject.activity.listview_item_effect.ListView_itemActivity;
 import com.runtai.testproject.activity.pinnedheaderlistview.PinnedHeaderListViewActivity;
+import com.runtai.testproject.activity.pulltorefresh.PullToRefreshActivity;
+import com.runtai.testproject.activity.stellarmap.StellarMapActivity;
 import com.runtai.testproject.activity.supertextview.SuperTextViewActivity;
 import com.runtai.testproject.activity.xedittext.XEditTextActivity;
 import com.runtai.testproject.activity.xradiobutton.XRadioButtonActivity;
 import com.runtai.testproject.view.AutoScrollTextView;
 import com.runtai.testproject.view.RunningTextView;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * 作者：高炎鹏
@@ -41,7 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Intent intent;
     private Button login, contacts, supertext, countdown, checkfourmark, datepicker, list_open_close, flowlayout,
             dialog_anim, list_item_anim, list_grid_anim, list_connect, scroll_isshow, animationbutton, xEditText,
-            XRadioButton, two_list_linkage, label_effect, expandPopTabView, toggleButton;
+            XRadioButton, two_list_linkage, label_effect, expandPopTabView, toggleButton, pulltorefresh, stellarMap,
+            clickdeflect, switchbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +109,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         expandPopTabView.setOnClickListener(this);
         toggleButton = (Button) findViewById(R.id.toggleButton);
         toggleButton.setOnClickListener(this);
+        pulltorefresh = (Button) findViewById(R.id.pulltorefresh);
+        pulltorefresh.setOnClickListener(this);
+        stellarMap = (Button) findViewById(R.id.stellarMap);
+        stellarMap.setOnClickListener(this);
+        clickdeflect = (Button) findViewById(R.id.clickdeflect);
+        clickdeflect.setOnClickListener(this);
+        switchbutton = (Button) findViewById(R.id.switchbutton);
+        switchbutton.setOnClickListener(this);
     }
 
     /**
@@ -124,10 +143,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         notice.startScroll();
     }
 
+    /**
+     * 网络请求
+     */
+    public void goods_id() {
+        // TODO Auto-generated method stub
+        String URL = "http://api.zzhenghua.cn/sm/love?id=12&sign=123";
+        OkHttpUtils.get().url(URL).build()
+                .execute(new StringCallback() {
+
+                    @Override
+                    public void onError(okhttp3.Call call, Exception e) {
+                        Logger.e(""+call);
+                        Toast.makeText(MainActivity.this,"call"+call,Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject json = new JSONObject(response);
+                            Logger.e(json.toString());
+                            Toast.makeText(MainActivity.this,"response"+response,Toast.LENGTH_SHORT).show();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                });
+    }
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button:
+                goods_id();
                 runningtextview.playNumber(Double.parseDouble("12345.67"));
                 break;
             case R.id.login://登录、注册界面
@@ -210,8 +259,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, ToggleButtonActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.pulltorefresh://多控件刷新、加载
+                intent = new Intent(this, PullToRefreshActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.stellarMap://关键词飞入飞出效果
+                intent = new Intent(this, StellarMapActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.clickdeflect://图片触摸点击偏转(偏转效果)
+                intent = new Intent(this, ClickDeflectActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.switchbutton://SwitchButton
+                intent = new Intent(this, ClickDeflectActivity.class);
+                startActivity(intent);
+                break;
             default:
                 break;
         }
     }
+
+
 }

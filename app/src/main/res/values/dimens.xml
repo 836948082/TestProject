@@ -3,4 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fragment_viewpager_margin">2.5dp</dimen>
+
+    <dimen name="stellar_map_padding">16dp</dimen>
 </resources>

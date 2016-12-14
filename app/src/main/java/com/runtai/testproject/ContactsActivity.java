@@ -20,6 +20,7 @@ import com.runtai.grantandroidpermission.utils.PermissionUtils;
 import com.runtai.logger.Logger;
 import com.runtai.testproject.cehua.BaseActivity;
 import com.runtai.testproject.utils.StringUtil;
+import com.runtai.testproject.utils.TelePhoneNumberUtil;
 import com.runtai.testproject.utils.ToastUtil;
 
 /**
@@ -31,7 +32,7 @@ public class ContactsActivity extends BaseActivity implements View.OnClickListen
 
     private static final int PICK_CONTACT_REQUEST = 0;
     private EditText contacts_et;
-    private Button contacts_bt;
+    private Button contacts_bt, selectall, selectnum;
     private String[] permissionContacts = new String[]{Manifest.permission.READ_CONTACTS};
 
     @Override
@@ -47,6 +48,10 @@ public class ContactsActivity extends BaseActivity implements View.OnClickListen
         contacts_et.setOnClickListener(this);
         contacts_bt = (Button) findViewById(R.id.contacts_bt);
         contacts_bt.setOnClickListener(this);
+        selectall = (Button) findViewById(R.id.selectall);
+        selectall.setOnClickListener(this);
+        selectnum = (Button) findViewById(R.id.selectnum);
+        selectnum.setOnClickListener(this);
     }
 
     @Override
@@ -80,6 +85,64 @@ public class ContactsActivity extends BaseActivity implements View.OnClickListen
                     }
                 } else {
                     choose();
+                    Log.e("不用申请权限", "android 小于 6.0");
+                }
+                break;
+            case R.id.selectall:
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    if (PermissionUtils.hasSelfPermissions(ContactsActivity.this, permissionContacts)) {
+                        TelePhoneNumberUtil.ReadAllTXL(this);
+                        Log.e("6.0有权限", "跳转");
+                    } else {
+                        CheckPermission
+                                .from(ContactsActivity.this)
+                                .setPermissions(permissionContacts)
+                                .setRationaleMsg("该功能需要读取联系人，不开启将无法正常工作！")
+                                .setPermissionListener(new PermissionListener() {
+                                    @Override
+                                    public void permissionGranted() {
+                                        Log.e("6.0--权限", "开启权限成功");
+                                        TelePhoneNumberUtil.ReadAllTXL(ContactsActivity.this);
+                                    }
+                                    @Override
+                                    public void permissionDenied() {
+                                        Log.e("6.0--权限", "开启权限失败");
+                                    }
+                                })
+                                .check();
+                        Log.e("6.0没有权限", "不跳转页面");
+                    }
+                } else {
+                    TelePhoneNumberUtil.ReadAllTXL(this);
+                    Log.e("不用申请权限", "android 小于 6.0");
+                }
+                break;
+            case R.id.selectnum:
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    if (PermissionUtils.hasSelfPermissions(ContactsActivity.this, permissionContacts)) {
+                        TelePhoneNumberUtil.selectOfName(this,"享便利");
+                        Log.e("6.0有权限", "跳转");
+                    } else {
+                        CheckPermission
+                                .from(ContactsActivity.this)
+                                .setPermissions(permissionContacts)
+                                .setRationaleMsg("该功能需要读取联系人，不开启将无法正常工作！")
+                                .setPermissionListener(new PermissionListener() {
+                                    @Override
+                                    public void permissionGranted() {
+                                        Log.e("6.0--权限", "开启权限成功");
+                                        TelePhoneNumberUtil.selectOfName(ContactsActivity.this,"享便利");
+                                    }
+                                    @Override
+                                    public void permissionDenied() {
+                                        Log.e("6.0--权限", "开启权限失败");
+                                    }
+                                })
+                                .check();
+                        Log.e("6.0没有权限", "不跳转页面");
+                    }
+                } else {
+                    TelePhoneNumberUtil.selectOfName(this,"享便利");
                     Log.e("不用申请权限", "android 小于 6.0");
                 }
                 break;

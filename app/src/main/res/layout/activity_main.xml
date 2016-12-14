@@ -163,6 +163,30 @@
                 android:layout_height="wrap_content"
                 android:text="状态开关按钮" />
 
+            <Button
+                android:id="@+id/pulltorefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="多控件刷新、加载" />
+
+            <Button
+                android:id="@+id/stellarMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="关键词飞入飞出效果" />
+
+            <Button
+                android:id="@+id/clickdeflect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="图片触摸点击偏转(偏转效果)" />
+
+            <Button
+                android:id="@+id/switchbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SwitchButton" />
+
         </LinearLayout>
     </ScrollView>
 

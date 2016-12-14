@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.runtai.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/grid_pulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.runtai.pulltorefresh.PullableGridView
+            android:id="@+id/grid_pulltorefreshgridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_background"
+            android:horizontalSpacing="1dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="1dp" />
+
+        <include layout="@layout/load_more" />
+    </com.runtai.pulltorefresh.PullToRefreshLayout>
+</LinearLayout>

@@ -82,6 +82,14 @@
         <activity android:name=".activity.expandpoptabview.ExpandPopTabViewActivity" />
 
         <activity android:name=".activity.ToggleButtonActivity" />
+
+        <activity android:name=".activity.pulltorefresh.PullToRefreshActivity" />
+        <activity android:name=".activity.pulltorefresh.PullToRefreshActivity_ListView" />
+        <activity android:name=".activity.pulltorefresh.PullToRefreshActivity_GridView" />
+        <activity android:name=".activity.pulltorefresh.PullToRefreshActivity_ScrollView" />
+
+        <activity android:name=".activity.stellarmap.StellarMapActivity" />
+        <activity android:name=".activity.clickdeflect.ClickDeflectActivity" />
     </application>
 
 </manifest>
