@@ -44,6 +44,13 @@
                 android:textSize="20sp" />
 
             <Button
+                android:id="@+id/network"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="网络请求"
+                android:textSize="18sp" />
+
+            <Button
                 android:id="@+id/login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -101,7 +108,7 @@
                 android:id="@+id/list_item_anim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ListView item飞入动画效果" />
+                android:text="ListView item飞入动画效果(携带ListView滑动方向监控)" />
 
             <Button
                 android:id="@+id/list_grid_anim"
@@ -186,6 +193,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="SwitchButton" />
+
+            <Button
+                android:id="@+id/javainteractivejs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="java、js交互" />
 
         </LinearLayout>
     </ScrollView>

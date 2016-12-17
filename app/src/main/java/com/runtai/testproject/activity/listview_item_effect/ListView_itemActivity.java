@@ -1,6 +1,9 @@
 package com.runtai.testproject.activity.listview_item_effect;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
@@ -16,13 +19,14 @@ import java.util.List;
 /**
  * @作者：高炎鹏
  * @时间：2016/10/29 09:50
- * @描述：ListView item飞入动画效果
+ * @描述：ListView item飞入动画效果(携带ListView滑动方向监控)
  */
 public class ListView_itemActivity extends BaseActivity {
 
     ListView list_item;
     List<String> list = new ArrayList<>();
     ListView_itemAdapter adapter;
+    private float mLastY = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,25 @@ public class ListView_itemActivity extends BaseActivity {
         adapter = new ListView_itemAdapter(this, list);
         list_item.setAdapter(adapter);
         startAnimation(true);
+        list_item.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View arg0, MotionEvent event) {
+                // TODO Auto-generated method stub
+                final int action = event.getAction();
+                switch (action & MotionEvent.ACTION_MASK) {
+                    case MotionEvent.ACTION_MOVE:
+                        float y = event.getY();
+                        if (y > mLastY) {
+                            Log.e("向下", "向下");
+                        } else {
+                            Log.e("向上", "向上");
+                        }
+                        mLastY = y;
+                        break;
+                }
+                return false;
+            }
+        });
     }
 
     /**

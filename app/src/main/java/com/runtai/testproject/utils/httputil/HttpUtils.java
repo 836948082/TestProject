@@ -58,8 +58,8 @@ public class HttpUtils {
         HttpURLConnection conn = (HttpURLConnection) urls.openConnection();
         conn.setRequestMethod(SERVLET_GET);
         // 设置连接超时、读取超时的时间，单位为毫秒（ms）
-        conn.setConnectTimeout(8000);
-        conn.setReadTimeout(8000);
+        conn.setConnectTimeout(10000);
+        conn.setReadTimeout(10000);
         //4、获取响应的输入流对象
         InputStreamReader is = new InputStreamReader(conn.getInputStream());
         BufferedReader bufferedReader = new BufferedReader(is);
@@ -141,8 +141,8 @@ public class HttpUtils {
         HttpURLConnection conn = (HttpURLConnection) urls.openConnection();
         conn.setRequestMethod(SERVLET_GET);
         // 设置连接超时、读取超时的时间，单位为毫秒（ms）
-        conn.setConnectTimeout(8000);
-        conn.setReadTimeout(8000);
+        conn.setConnectTimeout(10000);
+        conn.setReadTimeout(10000);
         //4、获取响应的输入流对象
         InputStreamReader is = new InputStreamReader(conn.getInputStream());
         BufferedReader bufferedReader = new BufferedReader(is);

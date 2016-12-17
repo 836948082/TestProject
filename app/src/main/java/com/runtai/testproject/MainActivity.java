@@ -14,6 +14,7 @@ import com.runtai.okhttputils.callback.StringCallback;
 import com.runtai.testproject.activity.CountdownActivity;
 import com.runtai.testproject.activity.DatePickerActivity;
 import com.runtai.testproject.activity.FlowLayoutActivity;
+import com.runtai.testproject.activity.JavaInteractiveJS;
 import com.runtai.testproject.activity.NiftyDialogEffectsActivity;
 import com.runtai.testproject.activity.ScrollShowTitleActivity;
 import com.runtai.testproject.activity.ToggleButtonActivity;
@@ -32,11 +33,14 @@ import com.runtai.testproject.activity.stellarmap.StellarMapActivity;
 import com.runtai.testproject.activity.supertextview.SuperTextViewActivity;
 import com.runtai.testproject.activity.xedittext.XEditTextActivity;
 import com.runtai.testproject.activity.xradiobutton.XRadioButtonActivity;
+import com.runtai.testproject.utils.httputil.HttpUtils;
 import com.runtai.testproject.view.AutoScrollTextView;
 import com.runtai.testproject.view.RunningTextView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.IOException;
 
 /**
  * 作者：高炎鹏
@@ -49,10 +53,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private AutoScrollTextView notice;
     private RunningTextView runningtextview;
     private Intent intent;
-    private Button login, contacts, supertext, countdown, checkfourmark, datepicker, list_open_close, flowlayout,
+    private Button network,login, contacts, supertext, countdown, checkfourmark, datepicker, list_open_close, flowlayout,
             dialog_anim, list_item_anim, list_grid_anim, list_connect, scroll_isshow, animationbutton, xEditText,
             XRadioButton, two_list_linkage, label_effect, expandPopTabView, toggleButton, pulltorefresh, stellarMap,
-            clickdeflect, switchbutton;
+            clickdeflect, switchbutton, javainteractivejs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +73,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         notice = (AutoScrollTextView) findViewById(R.id.notice);
         getWH();
 
+        network = (Button) findViewById(R.id.network);
+        network.setOnClickListener(this);
         login = (Button) findViewById(R.id.login);
         login.setOnClickListener(this);
         contacts = (Button) findViewById(R.id.contacts);
@@ -117,6 +123,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         clickdeflect.setOnClickListener(this);
         switchbutton = (Button) findViewById(R.id.switchbutton);
         switchbutton.setOnClickListener(this);
+        javainteractivejs = (Button) findViewById(R.id.javainteractivejs);
+        javainteractivejs.setOnClickListener(this);
     }
 
     /**
@@ -176,8 +184,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button:
-                goods_id();
                 runningtextview.playNumber(Double.parseDouble("12345.67"));
+                break;
+            case R.id.network://网络请求
+                //使用OKHttp网络请求
+                goods_id();
+                //使用原生网络请求(需要开启线程)
+                new Thread(){
+                    @Override
+                    public void run() {
+                        super.run();
+                        try {
+                            String jieguo = HttpUtils.getRequest("http://api.zzhenghua.cn/sm/love?id=12&sign=123");
+                            Logger.e(jieguo);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }.start();
                 break;
             case R.id.login://登录、注册界面
                 intent = new Intent(this, LoginActivity.class);
@@ -215,7 +239,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, NiftyDialogEffectsActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.list_item_anim://ListView item飞入动画效果
+            case R.id.list_item_anim://ListView item飞入动画效果(携带ListView滑动方向监控)
                 intent = new Intent(this, ListView_itemActivity.class);
                 startActivity(intent);
                 break;
@@ -273,6 +297,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.switchbutton://SwitchButton
                 intent = new Intent(this, ClickDeflectActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.javainteractivejs://java、js交互
+                intent = new Intent(this, JavaInteractiveJS.class);
                 startActivity(intent);
                 break;
             default:

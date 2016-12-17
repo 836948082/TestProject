@@ -90,6 +90,8 @@
 
         <activity android:name=".activity.stellarmap.StellarMapActivity" />
         <activity android:name=".activity.clickdeflect.ClickDeflectActivity" />
+
+        <activity android:name=".activity.JavaInteractiveJS" />
     </application>
 
 </manifest>
