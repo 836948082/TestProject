@@ -192,7 +192,7 @@
                 android:id="@+id/switchbutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SwitchButton" />
+                android:text="SwitchButton(通过包名打开第三方App)" />
 
             <Button
                 android:id="@+id/javainteractivejs"

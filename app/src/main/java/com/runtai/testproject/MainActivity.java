@@ -33,6 +33,7 @@ import com.runtai.testproject.activity.stellarmap.StellarMapActivity;
 import com.runtai.testproject.activity.supertextview.SuperTextViewActivity;
 import com.runtai.testproject.activity.xedittext.XEditTextActivity;
 import com.runtai.testproject.activity.xradiobutton.XRadioButtonActivity;
+import com.runtai.testproject.utils.OpenOtherPackageActivityUtil;
 import com.runtai.testproject.utils.httputil.HttpUtils;
 import com.runtai.testproject.view.AutoScrollTextView;
 import com.runtai.testproject.view.RunningTextView;
@@ -296,8 +297,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.switchbutton://SwitchButton
-                intent = new Intent(this, ClickDeflectActivity.class);
-                startActivity(intent);
+//                OpenOtherPackageActivityUtil.openApp(MainActivity.this, "com.runtai.switchbutton");
+                OpenOtherPackageActivityUtil.openApp(MainActivity.this, "com.runtai.switchbutton", "com.runtai.switchbutton.StyleActivity");
                 break;
             case R.id.javainteractivejs://java、js交互
                 intent = new Intent(this, JavaInteractiveJS.class);
@@ -307,6 +308,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
-
 
 }
