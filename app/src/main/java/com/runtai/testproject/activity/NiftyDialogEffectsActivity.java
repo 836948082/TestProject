@@ -66,7 +66,7 @@ public class NiftyDialogEffectsActivity extends BaseActivity implements View.OnC
                 .withTitle("Modal Dialog")                                  //.withTitle(null)  no title
                 .withTitleColor("#FFFFFF")                                  //def
                 .withDividerColor("#11000000")                              //def
-                .withMessage("This is a modal Dialog.")                     //.withMessage(null)  no Msg
+                .withMessage("This is tip_3 modal Dialog.")                     //.withMessage(null)  no Msg
                 .withMessageColor("#FFFFFFFF")                              //def  | withMessageColor(int resid)
                 .withDialogColor("#FFE74C3C")                               //def  | withDialogColor(int resid)                               //def
                 .withIcon(getResources().getDrawable(R.drawable.github_icon))

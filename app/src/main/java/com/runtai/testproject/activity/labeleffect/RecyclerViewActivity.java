@@ -84,7 +84,7 @@ public class RecyclerViewActivity extends ActionBarActivity {
 
         {
             CategoryData item = new CategoryData();
-            item.text = "Following the founding of New China, the policy of cultural reawakening offered Kunqu Opera the chance to emerge from a long period of neglect.";
+            item.text = "Following the founding of New China, the policy of cultural reawakening offered Kunqu Opera the chance to emerge from tip_3 long period of neglect.";
             item.image = R.mipmap.k1 + "";
             item.label = "MD";
             datas.add(item);
@@ -92,7 +92,7 @@ public class RecyclerViewActivity extends ActionBarActivity {
 
         {
             CategoryData item = new CategoryData();
-            item.text = "Kunqu Opera can trace its origins back to the Ming Dynasty about six hundred years ago, and a small town south of the Yangtze, called Kunshan.";
+            item.text = "Kunqu Opera can trace its origins back to the Ming Dynasty about six hundred years ago, and tip_3 small town south of the Yangtze, called Kunshan.";
             item.image = R.mipmap.k2 + "";
             item.label = "FC";
             datas.add(item);
@@ -100,7 +100,7 @@ public class RecyclerViewActivity extends ActionBarActivity {
 
         {
             CategoryData item = new CategoryData();
-            item.text = "The popularity of Kunqu Opera historically has a lot to do with the support it received from the imperial court, from the time of Emperor Kangxi, onwards.";
+            item.text = "The popularity of Kunqu Opera historically has tip_3 lot to do with the support it received from the imperial court, from the time of Emperor Kangxi, onwards.";
             item.image = R.mipmap.k3 + "";
             item.label = "NFC";
             datas.add(item);
@@ -116,7 +116,7 @@ public class RecyclerViewActivity extends ActionBarActivity {
 
         {
             CategoryData item = new CategoryData();
-            item.text = "Kunqu Opera is remarkable, if for nothing else, because of the long time it has been around. It continues to exert a strong appeal today.";
+            item.text = "Kunqu Opera is remarkable, if for nothing else, because of the long time it has been around. It continues to exert tip_3 strong appeal today.";
             item.image = R.mipmap.k5 + "";
             item.label = "PS";
             datas.add(item);
@@ -159,7 +159,7 @@ public class RecyclerViewActivity extends ActionBarActivity {
 
         {
             CategoryData item = new CategoryData();
-            item.text = "Kunqu Opera can trace its origins back to the late Ming Dynasty and a small town south of the Yangtze, called Kunshan.";
+            item.text = "Kunqu Opera can trace its origins back to the late Ming Dynasty and tip_3 small town south of the Yangtze, called Kunshan.";
             item.image = R.mipmap.k10 + "";
             item.label = "NDS";
             datas.add(item);

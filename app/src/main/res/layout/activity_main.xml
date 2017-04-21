@@ -43,6 +43,21 @@
                 android:textColor="#000"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Hello Android...I am android developer and developing this auto scroll text view via XML."
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
             <Button
                 android:id="@+id/network"
                 android:layout_width="match_parent"
@@ -199,6 +214,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="java、js交互" />
+
+            <Button
+                android:id="@+id/bowen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正余弦波纹" />
+
+            <Button
+                android:id="@+id/shopcar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="购物车" />
+
+            <Button
+                android:id="@+id/baidu_pull"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="仿百度外面下拉刷新动画" />
+
+            <Button
+                android:id="@+id/toprightmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="右上角的弹出菜单" />
 
         </LinearLayout>
     </ScrollView>

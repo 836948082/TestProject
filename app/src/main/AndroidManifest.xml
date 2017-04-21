@@ -92,6 +92,16 @@
         <activity android:name=".activity.clickdeflect.ClickDeflectActivity" />
 
         <activity android:name=".activity.JavaInteractiveJS" />
+
+        <activity android:name=".activity.bowen.BoWenActivity" />
+        <activity android:name=".activity.bowen.WaveActivity" />
+        <activity android:name=".activity.bowen.PorterDuffXfermodeActivity" />
+        <activity android:name=".activity.bowen.WaterWaveActivity" />
+
+        <activity android:name=".activity.ShopCarBottomActivity" />
+        <activity android:name=".activity.baidupullanim.BaiduPullActivity" />
+
+        <activity android:name=".activity.TopRightMenuActivity" />
     </application>
 
 </manifest>

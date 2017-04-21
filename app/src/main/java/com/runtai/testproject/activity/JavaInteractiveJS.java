@@ -115,4 +115,13 @@ public class JavaInteractiveJS extends BaseActivity implements View.OnClickListe
         }
         return super.onKeyDown(keyCode, event);
     }
+
+    @Override
+    public void finish() {
+        if (webview.canGoBack()) {
+            webview.goBack();//返回上一页面
+            return;
+        }
+        super.finish();
+    }
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标准正余弦波纹" />
+
+    <Button
+        android:id="@+id/bt_xfermode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图像混合模式之遮罩实现圆形波纹" />
+
+    <Button
+        android:id="@+id/bt_waterwave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="水波纹效果(动态调整)" />
+
+</LinearLayout>

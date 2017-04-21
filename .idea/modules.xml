@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/supertextview/supertextview.iml" filepath="$PROJECT_DIR$/supertextview/supertextview.iml" />
       <module fileurl="file://$PROJECT_DIR$/togglebutton/togglebutton.iml" filepath="$PROJECT_DIR$/togglebutton/togglebutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toprightmenulibrary/toprightmenulibrary.iml" filepath="$PROJECT_DIR$/toprightmenulibrary/toprightmenulibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/xedittext/xedittext.iml" filepath="$PROJECT_DIR$/xedittext/xedittext.iml" />
       <module fileurl="file://$PROJECT_DIR$/xradiobutton/xradiobutton.iml" filepath="$PROJECT_DIR$/xradiobutton/xradiobutton.iml" />
     </modules>

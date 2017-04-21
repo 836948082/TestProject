@@ -17,8 +17,12 @@ import com.runtai.testproject.activity.FlowLayoutActivity;
 import com.runtai.testproject.activity.JavaInteractiveJS;
 import com.runtai.testproject.activity.NiftyDialogEffectsActivity;
 import com.runtai.testproject.activity.ScrollShowTitleActivity;
+import com.runtai.testproject.activity.ShopCarBottomActivity;
 import com.runtai.testproject.activity.ToggleButtonActivity;
+import com.runtai.testproject.activity.TopRightMenuActivity;
 import com.runtai.testproject.activity.animationbutton.AnimationButtonActivity;
+import com.runtai.testproject.activity.baidupullanim.BaiduPullActivity;
+import com.runtai.testproject.activity.bowen.BoWenActivity;
 import com.runtai.testproject.activity.checkfourmark.CheckFourMark;
 import com.runtai.testproject.activity.clickdeflect.ClickDeflectActivity;
 import com.runtai.testproject.activity.connectlistview.ConnectListViewActivity;
@@ -57,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button network,login, contacts, supertext, countdown, checkfourmark, datepicker, list_open_close, flowlayout,
             dialog_anim, list_item_anim, list_grid_anim, list_connect, scroll_isshow, animationbutton, xEditText,
             XRadioButton, two_list_linkage, label_effect, expandPopTabView, toggleButton, pulltorefresh, stellarMap,
-            clickdeflect, switchbutton, javainteractivejs;
+            clickdeflect, switchbutton, javainteractivejs, bowen, shopcar, baidu_pull, toprightmenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,6 +130,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switchbutton.setOnClickListener(this);
         javainteractivejs = (Button) findViewById(R.id.javainteractivejs);
         javainteractivejs.setOnClickListener(this);
+        bowen = (Button) findViewById(R.id.bowen);
+        bowen.setOnClickListener(this);
+        shopcar = (Button) findViewById(R.id.shopcar);
+        shopcar.setOnClickListener(this);
+        baidu_pull = (Button) findViewById(R.id.baidu_pull);
+        baidu_pull.setOnClickListener(this);
+        toprightmenu = (Button) findViewById(R.id.toprightmenu);
+        toprightmenu.setOnClickListener(this);
     }
 
     /**
@@ -302,6 +314,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.javainteractivejs://java、js交互
                 intent = new Intent(this, JavaInteractiveJS.class);
+                startActivity(intent);
+                break;
+            case R.id.bowen://正余弦波纹
+                intent = new Intent(this, BoWenActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.shopcar://购物车
+                intent = new Intent(this, ShopCarBottomActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.baidu_pull://仿百度外面下拉刷新动画
+                intent = new Intent(this, BaiduPullActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.toprightmenu://右上角的弹出菜单
+                intent = new Intent(this, TopRightMenuActivity.class);
                 startActivity(intent);
                 break;
             default:

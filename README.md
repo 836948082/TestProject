@@ -70,3 +70,14 @@
               //控件中(LeftBottom(左下第二个TextView))点击事件
           }
       });
+
+
+      activity_bowen.xml中按钮的点击效果
+      1、列表
+      android:background="?android:selectableItemBackground"
+      2、按钮
+      android:background="?android:attr/selectableItemBackground" (有界波纹)
+      android:background="?android:attr/selectableItemBackgroundBorderless" (无界波纹)
+
+      android:colorControlHighlight：设置波纹颜色
+      android:colorAccent：设置checkbox等控件的选中颜色

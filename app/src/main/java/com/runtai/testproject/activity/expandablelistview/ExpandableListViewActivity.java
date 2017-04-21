@@ -78,4 +78,14 @@ public class ExpandableListViewActivity extends BaseActivity {
             expandable_listview.expandGroup(i);
         }
     }
+
+    /**
+     * 将所有父元素项目设置成关闭
+     */
+    public void setGroupClose() {
+        int groupCount = expandable_listview.getCount();
+        for (int i = 0; i < groupCount; i++) {
+            expandable_listview.collapseGroup(i);
+        }
+    }
 }

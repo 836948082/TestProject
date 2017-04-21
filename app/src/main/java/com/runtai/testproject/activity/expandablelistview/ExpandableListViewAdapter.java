@@ -68,9 +68,8 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
+    public View getGroupView(final int groupPosition, final boolean isExpanded, View convertView, ViewGroup parent) {
         String headerTitle = (String) getGroup(groupPosition);
-
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = infalInflater.inflate(R.layout.expandable_listview_header, parent, false);
@@ -79,9 +78,11 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
         header_text.setText(headerTitle);
         // 如果选中父元素条目，父元素TextView显示加粗，并改变icon
         if (isExpanded) {
+            Logger.i("组" + groupPosition + "---" + "展开---" + isExpanded);
             header_text.setTypeface(null, Typeface.BOLD);
             header_text.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_up, 0);
         } else {
+            Logger.i("组" + groupPosition + "---" + "关闭---" + isExpanded);
             header_text.setTypeface(null, Typeface.NORMAL);
             header_text.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_down, 0);
         }

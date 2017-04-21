@@ -88,4 +88,6 @@
 
     <color name="gray_background_right">#FAFAFA</color>
     <color name="gray_light">#EBEDF0</color>
+
+    <color name="new_title_color">#68b92e</color>
 </resources>
